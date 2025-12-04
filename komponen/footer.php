@@ -1,14 +1,13 @@
       <!--begin::Footer-->
       <footer class="app-footer">
-        <!--begin::To the end-->
-        <div class="float-end d-none d-sm-inline">Anything you want</div>
-        <!--end::To the end-->
         <!--begin::Copyright-->
+      <center>
         <strong>
-          Copyright &copy; 2014-2025&nbsp;
-          <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
+          Copyright &copy; 2024&nbsp;
+          <a href="#" class="text-decoration-none">Diva Oryza Sativa</a>.
         </strong>
         All rights reserved.
+      </center>
         <!--end::Copyright-->
       </footer>
       <!--end::Footer-->

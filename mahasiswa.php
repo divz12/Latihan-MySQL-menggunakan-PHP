@@ -6,7 +6,7 @@ include ('komponen/sidebar.php');
 ?>
 
 <div class="container">
-    <h3 class="mb-3">Data Mahasiswa</h3>
+    <h3 class="mb-3 mt-3">Data Mahasiswa</h3>
 
     <table class="table table-bordered table-striped table-hover">
         <thead class="table-primary">
