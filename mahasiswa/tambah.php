@@ -31,8 +31,6 @@ include ('../komponen/sidebar.php');
                         <select name="prodi" class="form-control">
                             <option value="">-- Pilih Prodi --</option>
                             <option value="TEKNOLOGI REKAYASA PERANGKAT LUNAK">TEKNOLOGI REKAYASA PERANGKAT LUNAK</option>
-                            <option value="SISTEM INFORMASI">SISTEM INFORMASI</option>
-                            <option value="INFORMATIKA">INFORMATIKA</option>
                             <option value="TEKNOLOGI LISTRIK">TEKNOLOGI LISTRIK</option>
                             <option value="TEKNOLOGI MESIN">TEKNOLOGI MESIN</option>
                             <option value="TEKNOLOGI MEKATRONIKA">TEKNOLOGI MEKATRONIKA</option>
