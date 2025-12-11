@@ -17,7 +17,7 @@ include ('../komponen/sidebar.php');
 
                 <div class="form-group mb-3">
                     <label>NIDN</label>
-                    <input type="text" name="nidn" class="form-control" placeholder="Masukkan NIM">
+                    <input type="text" name="nidn" class="form-control" placeholder="Masukkan NIDN">
                 </div>
 
                 <div class="form-group mb-3">
