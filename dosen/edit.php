@@ -38,16 +38,6 @@ $row = mysqli_fetch_array($data);
                                 TEKNOLOGI REKAYASA PERANGKAT LUNAK
                             </option>
 
-                            <option value="SISTEM INFORMASI"
-                                <?= ($row['prodi'] == "SISTEM INFORMASI") ? "selected" : ""; ?>>
-                                SISTEM INFORMASI
-                            </option>
-
-                            <option value="INFORMATIKA"
-                                <?= ($row['prodi'] == "INFORMATIKA") ? "selected" : ""; ?>>
-                                INFORMATIKA
-                            </option>
-
                             <option value="TEKNOLOGI LISTRIK"
                                 <?= ($row['prodi'] == "TEKNOLOGI LISTRIK") ? "selected" : ""; ?>>
                                 TEKNOLOGI LISTRIK
