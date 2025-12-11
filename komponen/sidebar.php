@@ -5,14 +5,10 @@
           <!--begin::Brand Link-->
           <a href="index.html" class="brand-link">
             <!--begin::Brand Image-->
-            <img
-              src="assets/img/AdminLTELogo.png"
-              alt="AdminLTE Logo"
-              class="brand-image opacity-75 shadow"
-            />
+            <img src="/Latihan MySQL menggunakan PHP/assets/img/php-logo.png" alt="" class="brand-image opacity-75 shadow"/>
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">Latihan 9</span>
+            <span class="brand-text fw-light me-4">PHP | MySQL</span>
             <!--end::Brand Text-->
           </a>
           <!--end::Brand Link-->
@@ -31,7 +27,7 @@
               id="navigation"
             >
               <li class="nav-item">
-                <a href="<?= "mahasiswa.php"; ?>" class="nav-link">
+                <a href="<?= "/Latihan MySQL menggunakan PHP/mahasiswa/index.php"; ?>" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
                   <p>
                     Data Mahasiswa
@@ -39,13 +35,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= "dosen.php"; ?>" class="nav-link">
+                <a href="<?= "/Latihan MySQL menggunakan PHP/dosen/index.php"; ?>" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
                   <p>Data Dosen</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?= "matkul.php"; ?>" class="nav-link">
+                <a href="<?= "/Latihan MySQL menggunakan PHP/matkul/index.php"; ?>" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
                   <p>
                     Data Mata Kuliah
@@ -54,7 +50,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="<?= "nilai.php"; ?>" class="nav-link">
+                <a href="<?= "/Latihan MySQL menggunakan PHP/nilai/index.php"; ?>" class="nav-link">
                   <i class="nav-icon bi bi-box-seam-fill"></i>
                   <p>
                     Data Nilai

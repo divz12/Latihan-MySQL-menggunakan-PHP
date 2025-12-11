@@ -9,7 +9,7 @@
                 <i class="bi bi-list"></i>
               </a>
             </li>
-            <li class="nav-item d-none d-md-block"><a href="<?= "index.php"; ?>" class="nav-link">Home</a></li>
+            <li class="nav-item d-none d-md-block"><a href="<?= "../index.php"; ?>" class="nav-link">Home</a></li>
           </ul>
           <!--end::Start Navbar Links-->
           <!--begin::End Navbar Links-->
@@ -27,7 +27,7 @@
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <img
-                  src="assets/img/user4-128x128.jpg"
+                  src="/Latihan MySQL menggunakan PHP/assets/img/user4-128x128.jpg"
                   class="user-image rounded-circle shadow"
                   alt="User Image"
                 />

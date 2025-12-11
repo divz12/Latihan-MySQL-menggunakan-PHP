@@ -16,7 +16,7 @@ include ('komponen/sidebar.php');
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Latihan 9</li>
+                  <li class="breadcrumb-item active" aria-current="page">Latihan 10</li>
                 </ol>
               </div>
             </div>
