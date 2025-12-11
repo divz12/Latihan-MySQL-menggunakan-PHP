@@ -4,20 +4,18 @@ include ('../komponen/header.php');
 include ('../komponen/topbar.php');
 include ('../komponen/sidebar.php');
 
-
 $data = mysqli_query($koneksi, "SELECT MAX(kodeMatkul) AS kode FROM tbl_matkul");
 $hasil = mysqli_fetch_assoc($data);
 
-$lastKode = $d['kode'];
+$lastKode = $hasil['kode'];
 
 $urut = 1;
 if ($lastKode) {
-    $urut = (int) substr($lastKode, 2, 3); 
+    $urut = (int) substr($lastKode, 2, 3);
     $urut++;
 }
 
 $kodeBaru = "MK" . sprintf("%03d", $urut);
-
 ?>
 
 <div class="container">
