@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2025 at 01:40 PM
+-- Generation Time: Dec 18, 2025 at 09:29 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,16 +39,13 @@ CREATE TABLE `tbl_dosen` (
 --
 
 INSERT INTO `tbl_dosen` (`nidn`, `nama`, `prodi`, `email`) VALUES
-(11001, 'Dr. Andi Wijaya', 'Informatika', 'andi@campus.ac.id'),
-(11002, 'Nur Aisyah, M.Kom', 'Sistem Informasi', 'aisyah@campus.ac.id'),
-(11003, 'Bambang Setiawan, M.T', 'Informatika', 'bambang@campus.ac.id'),
-(11004, 'Rizky Fajar, M.Kom', 'Informatika', 'rizkyf@campus.ac.id'),
-(11005, 'Diah Kusuma, M.T', 'Sistem Informasi', 'diah@campus.ac.id'),
-(11006, 'M. Gilang Pratama, M.Kom', 'Informatika', 'gilang@campus.ac.id'),
-(11007, 'Dewi Handayani, M.Kom', 'Sistem Informasi', 'handayani@campus.ac.id'),
-(11008, 'Hendra Saputra, M.T', 'Informatika', 'hendra@campus.ac.id'),
-(11009, 'Tasya Nurhaliza, M.Kom', 'Sistem Informasi', 'tasya@campus.ac.id'),
-(11010, 'Yusuf Maulana, M.Kom', 'Informatika', 'yusuf@campus.ac.id');
+(406107801, 'RICAK AGUS SETIAWAN, M.S.I', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'ricak@gmail.com'),
+(406107802, 'HETI MULYANI S.Kom., M.Kom', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'heti@gmail.com'),
+(406107803, 'HALIMIL FATHI, S.Kom., M.Kom', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'halimil@gmail.com'),
+(406107804, 'MUSAWARMAN, S. Kom., M.M.S.I', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'musa@gmail.com'),
+(406107805, 'SUKRINA HERMAN, S.Kom.,M.Kom.', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'rina@gmail.com'),
+(406107806, 'WIDYA ANDAYANI RAHAYU, M.Pd', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'widya@gmail.com'),
+(406107807, 'SALMAN, M.Pd.', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'salman@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -69,16 +66,17 @@ CREATE TABLE `tbl_mahasiswa` (
 --
 
 INSERT INTO `tbl_mahasiswa` (`nim`, `nama`, `prodi`, `angkatan`, `email`) VALUES
-(2023001, 'Aulia Rahma', 'Informatika', 2023, 'aulia@campus.ac.id'),
-(2023002, 'Budi Santoso', 'Sistem Informasi', 2023, 'budi@campus.ac.id'),
-(2023003, 'Citra Lestari', 'Informatika', 2022, 'citra@campus.ac.id'),
-(2023004, 'Dewi Permata', 'Informatika', 2023, 'dewi@campus.ac.id'),
-(2023005, 'Eko Prasetyo', 'Sistem Informasi', 2022, 'eko@campus.ac.id'),
-(2023006, 'Fajar Ramadhan', 'Informatika', 2024, 'fajar@campus.ac.id'),
-(2023007, 'Gita Rosalia', 'Sistem Informasi', 2024, 'gita@campus.ac.id'),
-(2023008, 'Hafiz Alfarizi', 'Informatika', 2023, 'hafiz@campus.ac.id'),
-(2023009, 'Intan Maharani', 'Sistem Informasi', 2022, 'intan@campus.ac.id'),
-(2023010, 'Joko Wibowo', 'Informatika', 2024, 'joko@campus.ac.id');
+(20404001, 'FIKRI RAMDANI', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'fikri@gmail.com'),
+(20404004, 'SALMAN ALFARIDZI', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'salman@gmail.com'),
+(20404009, 'MUHAMMAD GILANG RAMADAN', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'gilangg@gmail.com'),
+(20404010, 'HELGI NUR ALAMSYAH', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'helgi@gmail.com'),
+(20404011, 'KHAIKAL IKHSANUDDIN', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'khaikal@gmail.com'),
+(20404013, 'MUHAMMADD SARWAN ALBARIZY', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2023, 'albar@gmail.com'),
+(20404019, 'ZAHRA AYU TRISNA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'zahra@gmail.com'),
+(20404020, 'REZA ASRIANO MAULANA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'reza@gmail.com'),
+(20404021, 'SATRIO ILHAM SAPUTRA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'satrio@gmail.com'),
+(20404023, 'SUBANI MAULANA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'subani@gmail.com'),
+(20404025, 'DIVA ORYZA SATIVA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'diva@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -98,16 +96,16 @@ CREATE TABLE `tbl_matkul` (
 --
 
 INSERT INTO `tbl_matkul` (`kodeMatkul`, `namaMatkul`, `sks`, `nidn`) VALUES
-('IF101', 'Algoritma dan Struktur Data', 3, 11001),
-('IF102', 'Basis Data', 3, 11002),
-('IF103', 'Pemrograman Web', 3, 11003),
-('IF104', 'Jaringan Komputer', 3, 11004),
-('IF105', 'Sistem Operasi', 3, 11005),
-('IF106', 'Rekayasa Perangkat Lunak', 3, 11006),
-('IF107', 'Kecerdasan Buatan', 3, 11007),
-('IF108', 'Pemrograman Mobile', 3, 11008),
-('IF109', 'Keamanan Informasi', 3, 11009),
-('IF110', 'Data Mining', 3, 11010);
+('MK001', 'KALKULUS', 2, 406107802),
+('MK002', 'ALJABAR', 2, 406107802),
+('MK003', 'BASIS DATA', 3, 406107805),
+('MK004', 'AGAMA', 2, 406107807),
+('MK005', 'PEMOGRAMAN WEB 2', 4, 406107801),
+('MK006', 'UI/UX', 4, 406107804),
+('MK007', 'SISTEM OPERASI', 4, 406107803),
+('MK008', 'PEMOGRAMAN VISUAL', 4, 406107803),
+('MK009', 'BAHASA INGGRIS', 2, 406107806),
+('MK010', 'PEMOGRAMAN BERIONTASI OBJECT', 4, 406107804);
 
 -- --------------------------------------------------------
 
@@ -129,21 +127,66 @@ CREATE TABLE `tbl_nilai` (
 --
 
 INSERT INTO `tbl_nilai` (`id_nilai`, `nilai`, `nilaiHuruf`, `kodeMatkul`, `nim`, `nidn`) VALUES
-(1, 85, 'A', 'IF101', 2023001, 11001),
-(2, 78, 'B', 'IF102', 2023001, 11002),
-(3, 90, 'A', 'IF103', 2023002, 11003),
-(4, 72, 'C', 'IF104', 2023003, 11004),
-(5, 88, 'A', 'IF105', 2023004, 11005),
-(6, 81, 'A', 'IF106', 2023005, 11006),
-(7, 69, 'D', 'IF107', 2023006, 11007),
-(8, 95, 'A', 'IF108', 2023007, 11008),
-(9, 77, 'B', 'IF109', 2023008, 11009),
-(10, 84, 'A', 'IF110', 2023009, 11010),
-(11, 92, 'A', 'IF101', 2023010, 11001),
-(12, 73, 'C', 'IF102', 2023004, 11002),
-(13, 88, 'A', 'IF103', 2023005, 11003),
-(14, 65, 'D', 'IF104', 2023006, 11004),
-(15, 80, 'B', 'IF105', 2023007, 11005);
+(1, 88, 'B', 'MK008', 20404001, 406107803),
+(2, 75, 'B', 'MK001', 20404004, 406107802),
+(3, 90, 'A', 'MK010', 20404010, 406107804),
+(4, 95, 'A', 'MK005', 20404011, 406107801),
+(5, 80, 'B', 'MK006', 20404013, 406107804),
+(6, 88, 'B', 'MK003', 20404019, 406107805),
+(7, 98, 'A', 'MK007', 20404020, 406107803),
+(8, 69, 'C', 'MK002', 20404021, 406107802),
+(9, 59, 'D', 'MK004', 20404023, 406107807),
+(11, 100, 'A', 'MK006', 20404025, 406107804);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_user`
+--
+
+CREATE TABLE `tbl_user` (
+  `id` int(11) NOT NULL,
+  `username` int(11) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`id`, `username`, `password`, `role`) VALUES
+(1, 406107801, '12345', 'dosen'),
+(2, 406107802, '12345', 'dosen'),
+(3, 406107803, '12345', 'dosen'),
+(4, 406107804, '12345', 'dosen'),
+(5, 406107805, '12345', 'dosen'),
+(6, 406107806, '12345', 'dosen'),
+(7, 406107807, '12345', 'dosen'),
+(8, 406107808, '12345', 'dosen'),
+(9, 406107809, '12345', 'dosen'),
+(10, 202404001, '12345', 'mhs'),
+(11, 202404002, '12345', 'mhs'),
+(12, 202404004, '12345', 'mhs'),
+(13, 202404005, '12345', 'mhs'),
+(14, 202404007, '12345', 'mhs'),
+(15, 202404008, '12345', 'mhs'),
+(16, 202404009, '12345', 'mhs'),
+(17, 202404010, '12345', 'mhs'),
+(18, 202404011, '12345', 'mhs'),
+(19, 202404012, '12345', 'mhs'),
+(20, 202404013, '12345', 'mhs'),
+(21, 202404014, '12345', 'mhs'),
+(22, 202404016, '12345', 'mhs'),
+(23, 202404017, '12345', 'mhs'),
+(24, 202404018, '12345', 'mhs'),
+(25, 202404019, '12345', 'mhs'),
+(26, 202404020, '12345', 'mhs'),
+(27, 202404021, '12345', 'mhs'),
+(28, 202404022, '12345', 'mhs'),
+(29, 202404023, '12345', 'mhs'),
+(30, 202404024, '12345', 'mhs'),
+(31, 202404025, '12345', 'mhs');
 
 --
 -- Indexes for dumped tables
@@ -178,6 +221,12 @@ ALTER TABLE `tbl_nilai`
   ADD KEY `kodeMatkul` (`kodeMatkul`) USING BTREE;
 
 --
+-- Indexes for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -185,7 +234,13 @@ ALTER TABLE `tbl_nilai`
 -- AUTO_INCREMENT for table `tbl_nilai`
 --
 ALTER TABLE `tbl_nilai`
-  MODIFY `id_nilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_nilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- Constraints for dumped tables
