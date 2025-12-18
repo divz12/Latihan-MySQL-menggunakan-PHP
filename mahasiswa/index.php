@@ -1,4 +1,5 @@
 <?php
+include ('../komponen/blok.php');
 include ('../komponen/koneksi.php');
 include ('../komponen/header.php');
 include ('../komponen/topbar.php');

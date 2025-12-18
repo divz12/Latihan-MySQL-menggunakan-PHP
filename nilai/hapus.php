@@ -1,4 +1,9 @@
 <?php
+include ('../komponen/blok.php');
+if($_SESSION['role'] == 'mhs'){
+    header("Location: ../index.php");
+    exit();
+}
 include "../komponen/koneksi.php";
 
 if (!isset($_GET['id_nilai'])) {

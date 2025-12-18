@@ -1,8 +1,14 @@
 <?php
+include ('../komponen/blok.php');
+if($_SESSION['role'] == 'mhs'){
+    header("Location: ../index.php");
+    exit();
+}
 include ('../komponen/koneksi.php');
 include ('../komponen/header.php');
 include ('../komponen/topbar.php');
 include ('../komponen/sidebar.php');
+
 ?>
 
 <div class="container">

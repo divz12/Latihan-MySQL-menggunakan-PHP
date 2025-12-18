@@ -27,7 +27,7 @@
             <li class="nav-item dropdown user-menu">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 <img
-                  src="/Latihan MySQL menggunakan PHP/assets/img/user4-128x128.jpg"
+                  src="/Latihan MySQL menggunakan PHP/assets/img/profile.png"
                   class="user-image rounded-circle shadow"
                   alt="User Image"
                 />
@@ -37,20 +37,21 @@
                 <!--begin::User Image-->
                 <li class="user-header text-bg-primary">
                   <img
-                    src="assets/img/user4-128x128.jpg"
+                    src="/Latihan MySQL menggunakan PHP/assets/img/logo.jpg"
                     class="rounded-circle shadow"
                     alt="User Image"
                   />
                   <p>
                     Diva Oryza Sativa - TRPL 24
-                    <small>202404025</small>
+                    <p><?= $_SESSION['login_user'] ?></p>
+                    <p><?= $_SESSION['role'] ?></p>
                   </p>
                 </li>
                 <!--end::User Image-->
                 <!--begin::Menu Footer-->
                 <li class="user-footer">
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
-                  <a href="#" class="btn btn-default btn-flat float-end">Sign out</a>
+                  <a href="../logout.php" class="btn btn-default btn-flat float-end">Sign out</a>
                 </li>
                 <!--end::Menu Footer-->
               </ul>
