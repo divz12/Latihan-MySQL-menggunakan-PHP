@@ -19,7 +19,7 @@ include ('../komponen/sidebar.php');
 
         <div class="card-body">
 
-            <form action="proses_tambah.php" method="post">
+            <form action="proses_tambah.php" method="post" enctype="multipart/form-data">
 
                 <div class="form-group mb-3">
                     <label>NIM</label>
@@ -53,6 +53,11 @@ include ('../komponen/sidebar.php');
                 <div class="form-group mb-3">
                     <label>Email</label>
                     <input type="email" name="email" class="form-control" placeholder="Masukkan Email">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Foto</label>
+                    <input type="file" name="filefoto" class="form-control" placeholder="Masukkan Foto">
                 </div>
 
                 <div class="mt-4">

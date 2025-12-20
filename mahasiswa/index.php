@@ -26,6 +26,7 @@ include ('../komponen/sidebar.php');
                 <th>Prodi</th>
                 <th>Angkatan</th>
                 <th>Email</th>
+                <th>Foto</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -42,6 +43,8 @@ include ('../komponen/sidebar.php');
                     <td><?= $row['prodi']; ?></td>
                     <td><?= $row['angkatan']; ?></td>
                     <td><?= $row['email']; ?></td>
+                    <td>
+                        <img src="../foto/<?= $row['foto']; ?>" width="100px" >
                     <td>
                         <a href="edit.php?nim=<?= $row['nim']; ?>" class="btn btn-warning btn-sm">
                             <i class="fas fa-edit"></i>

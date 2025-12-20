@@ -22,7 +22,7 @@ $row = mysqli_fetch_array($data);
 
         <div class="card-body">
 
-            <form action="proses_edit.php" method="post">
+            <form action="proses_edit.php" method="post" enctype="multipart/form-data">
 
                 <input type="hidden" name="nim" value="<?= $row['nim']; ?>" readonly>
 
@@ -75,6 +75,12 @@ $row = mysqli_fetch_array($data);
                     <label>Email</label>
                     <input type="email" name="email" class="form-control"
                            value="<?= $row['email']; ?>" placeholder="Masukkan Email">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label>Foto</label><br>
+                    <img src="../foto/<?= $row['foto']; ?>" width="100px" class="mb-2">
+                    <input type="file" name="filefoto" class="form-control" placeholder="Masukkan Foto">
                 </div>
 
                 <div class="mt-4">

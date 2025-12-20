@@ -18,7 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header("Location: index.php");
         exit();
     } else {
-        $error = "Username atau Password salah.";
+        echo "<script>alert('Username atau Password salah'); 
+        window.location.href='login.php';</script>";
     }
 }
 
