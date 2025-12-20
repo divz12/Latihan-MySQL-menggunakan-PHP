@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2025 at 09:29 AM
+-- Generation Time: Dec 20, 2025 at 04:19 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -31,21 +31,22 @@ CREATE TABLE `tbl_dosen` (
   `nidn` int(11) NOT NULL,
   `nama` varchar(120) DEFAULT NULL,
   `prodi` varchar(120) DEFAULT NULL,
-  `email` char(50) DEFAULT NULL
+  `email` char(50) DEFAULT NULL,
+  `foto` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `tbl_dosen`
 --
 
-INSERT INTO `tbl_dosen` (`nidn`, `nama`, `prodi`, `email`) VALUES
-(406107801, 'RICAK AGUS SETIAWAN, M.S.I', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'ricak@gmail.com'),
-(406107802, 'HETI MULYANI S.Kom., M.Kom', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'heti@gmail.com'),
-(406107803, 'HALIMIL FATHI, S.Kom., M.Kom', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'halimil@gmail.com'),
-(406107804, 'MUSAWARMAN, S. Kom., M.M.S.I', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'musa@gmail.com'),
-(406107805, 'SUKRINA HERMAN, S.Kom.,M.Kom.', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'rina@gmail.com'),
-(406107806, 'WIDYA ANDAYANI RAHAYU, M.Pd', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'widya@gmail.com'),
-(406107807, 'SALMAN, M.Pd.', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'salman@gmail.com');
+INSERT INTO `tbl_dosen` (`nidn`, `nama`, `prodi`, `email`, `foto`) VALUES
+(406107801, 'RICAK AGUS SETIAWAN, M.S.I', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'ricak@gmail.com', '../foto/foto2.jpg'),
+(406107802, 'HETI MULYANI S.Kom., M.Kom', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'heti@gmail.com', '../foto/foto1.jpg'),
+(406107803, 'HALIMIL FATHI, S.Kom., M.Kom', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'halimil@gmail.com', '../foto/foto3.jpg'),
+(406107804, 'MUSAWARMAN, S. Kom., M.M.S.I', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'musa@gmail.com', '../foto/foto2.jpg'),
+(406107805, 'SUKRINA HERMAN, S.Kom.,M.Kom.', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'rina@gmail.com', '../foto/foto1.jpg'),
+(406107806, 'WIDYA ANDAYANI RAHAYU, M.Pd', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'widya@gmail.com', '../foto/foto1.jpg'),
+(406107807, 'SALMAN, M.Pd.', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 'salman@gmail.com', '../foto/foto3.jpg');
 
 -- --------------------------------------------------------
 
@@ -58,25 +59,27 @@ CREATE TABLE `tbl_mahasiswa` (
   `nama` varchar(120) DEFAULT NULL,
   `prodi` varchar(120) DEFAULT NULL,
   `angkatan` int(11) DEFAULT NULL,
-  `email` char(50) DEFAULT NULL
+  `email` char(50) DEFAULT NULL,
+  `foto` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `tbl_mahasiswa`
 --
 
-INSERT INTO `tbl_mahasiswa` (`nim`, `nama`, `prodi`, `angkatan`, `email`) VALUES
-(20404001, 'FIKRI RAMDANI', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'fikri@gmail.com'),
-(20404004, 'SALMAN ALFARIDZI', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'salman@gmail.com'),
-(20404009, 'MUHAMMAD GILANG RAMADAN', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'gilangg@gmail.com'),
-(20404010, 'HELGI NUR ALAMSYAH', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'helgi@gmail.com'),
-(20404011, 'KHAIKAL IKHSANUDDIN', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'khaikal@gmail.com'),
-(20404013, 'MUHAMMADD SARWAN ALBARIZY', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2023, 'albar@gmail.com'),
-(20404019, 'ZAHRA AYU TRISNA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'zahra@gmail.com'),
-(20404020, 'REZA ASRIANO MAULANA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'reza@gmail.com'),
-(20404021, 'SATRIO ILHAM SAPUTRA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'satrio@gmail.com'),
-(20404023, 'SUBANI MAULANA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'subani@gmail.com'),
-(20404025, 'DIVA ORYZA SATIVA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'diva@gmail.com');
+INSERT INTO `tbl_mahasiswa` (`nim`, `nama`, `prodi`, `angkatan`, `email`, `foto`) VALUES
+(20404001, 'FIKRI RAMDANI', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'fikri@gmail.com', '../foto/foto2.jpg'),
+(20404004, 'SALMAN ALFARIDZI', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'salman@gmail.com', '../foto/foto3.jpg'),
+(20404009, 'MUHAMMAD GILANG RAMADAN', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'gilangg@gmail.com', '../foto/foto2.jpg'),
+(20404010, 'HELGI NUR ALAMSYAH', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'helgi@gmail.com', '../foto/foto3.jpg'),
+(20404011, 'KHAIKAL IKHSANUDDIN', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'khaikal@gmail.com', '../foto/foto2.jpg'),
+(20404013, 'MUHAMMADD SARWAN ALBARIZY', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2023, 'albar@gmail.com', '../foto/foto3.jpg'),
+(20404018, 'ALAMANI ABAS', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'amani@gmail.com', '../foto/foto1.jpg'),
+(20404019, 'ZAHRA AYU TRISNA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'zahra@gmail.com', '../foto/foto1.jpg'),
+(20404020, 'REZA ASRIANO MAULANA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'reza@gmail.com', '../foto/foto2.jpg'),
+(20404021, 'SATRIO ILHAM SAPUTRA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'satrio@gmail.com', '../foto/foto3.jpg'),
+(20404023, 'SUBANI MAULANA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'subani@gmail.com', '../foto/foto2.jpg'),
+(20404025, 'DIVA ORYZA SATIVA', 'TEKNOLOGI REKAYASA PERANGKAT LUNAK', 2024, 'diva@gmail.com', '../foto/foto1.jpg');
 
 -- --------------------------------------------------------
 
